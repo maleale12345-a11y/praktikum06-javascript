@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum Javascript</title>
+</head>
+<body>
+    <h2>Praktikum JavaScript</h2>
+    <p>Lihat hasil melalui console (F12).</p>
+    
+    <script>
+       const nama = "Male Ganteng";
+       let umur = 18;
+       let nilai = 90;
+       let aktif = true;
+
+       console.log("Nama: ", nama);
+       console.log("Umur: ", umur);
+       console.log("Nilai: ", nilai);
+       console.log("Status Aktif: ", aktif);
+       console.log("Tipe nilai: ", typeof nilai); 0.30
+
+       const tugas = 90;
+       const uts = 80;
+       const uas = 95;
+       const akhir = tugas * 0.30 + uts * 0.30 + uas * 0.40;
+
+       console.log("Nilai Akhir: ", akhir);
+       console.log("Lulus: ", akhir >= 60);
+
+       const nilai1 = 90;
+       let kategori;
+       if (nilai >= 85) {
+           kategori = "A";
+       } else if (nilai >= 70) {
+           kategori = "B";
+       } else if (nilai >= 60) {
+           kategori = "C";
+       } else {
+           kategori = "D";
+         }
+
+           console.log("Nilai: ", nilai1);
+           console.log("Kategori: ", kategori);
+
+           function hitungDiskon(harga, persen) {
+               return harga - (harga * persen / 100);
+           }
+
+           for (let i = 0; i <=3; i++) {
+            const harga = i * 100000;
+            const bayar = hitungDiskon(harga, 10);
+            console.log("Harga: ", harga, "Bayar: ", bayar);
+                   }       
+
+                   const mahasiswa = [
+                       { nama: "Budi", umur: 19 },
+                       { nama: "Siti", umur: 18 },
+                       { nama: "Andi", umur: 23 }
+                   ];
+    </script
+</body>
+</html>

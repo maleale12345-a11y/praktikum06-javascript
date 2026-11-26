@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="icon" href="data:,">
+<body>
+    <h2>Praktikum Mandiri 06 - JavaScript</h2>
+    <p>Lihat hasil melalui console (F12).</p>
+
+    <script>
+
+const nama = "Muhammad Abdul Malik";
+const tugas = 80;
+const uts = 70;
+const uas = 90;
+
+function hitungNilaiAkhir(tugas, uts, uas) {
+  return tugas * 0.3 + uts * 0.3 + uas * 0.4;
+}
+
+function tentukanStatus(nilaiAkhir) {
+  return nilaiAkhir >= 60 ? "LULUS" : "TIDAK LULUS";
+}
+
+const nilaiAkhir = hitungNilaiAkhir(tugas, uts, uas);
+const status = tentukanStatus(nilaiAkhir);
+
+console.log("Nama Mahasiswa   : " + nama);
+console.log("Nilai Akhir      : " + nilaiAkhir);
+console.log("Status Kelulusan : " + status);
+    </script>
+</body>
+</html>
